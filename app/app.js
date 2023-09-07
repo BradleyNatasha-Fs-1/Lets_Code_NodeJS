@@ -8,7 +8,7 @@ app.use(express.json());
 
 // service actuator - localhost 3000
 app.get("/", (req,res)=>{
-res.status(200).json({message: 'Service is up'});
+    res.status(200).json({message: 'Service is up'});
 });
 
 //use middleware to define my router
