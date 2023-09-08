@@ -14,6 +14,8 @@ app.get("/", (req,res)=>{
 //use middleware to define my router
 app.use("/exercise", router);
 
+
+
 //use middleware to handle errors and bad url paths
 app.use((req,res,next) =>{
     const error = new Error("Not Found");
